@@ -1,13 +1,18 @@
-<h1>Login</h1>
+<div class="card mt-5">
+    <form action="">
+        <h1 class="card-title">Login</h1>
 
-<div>
-    <label for="">Usuario</label>
-    <input type="text" placeholder="ingrese usuario">
-</div>
-<div>
-    <label for="">Contraseña</label>
-    <input type="text" placeholder="Ingrese una contraseña">
-</div>
-<div>
-    <button>LOGIN</button>
+    <div class="mb-3">
+        <label class="form-label" for="usa">Usuario:</label>
+        <input #usuarios type="password" id="usa" name="usa" class="form-control" placeholder="ingrese usuario">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="">Contraseña:</label>
+        <input #contraseñas type="password" id="inputPassword5" class="form-control" placeholder="Ingrese una contraseña">
+    </div>
+    <div>
+        <button (click)="mostrar(usuarios, contraseñas)" class="btn btn-primary" value="Ingresar">LOGIN</button>
+    </div>
+
+    </form>
 </div>
